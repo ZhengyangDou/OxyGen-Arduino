@@ -41,7 +41,7 @@
   <script>
     function fetchData() {
       // 发送 HTTP 请求获取数据
-      fetch('http:/127.0.0.1:5000/data')
+      fetch('http://127.0.0.1:5000/data')
         .then(response => response.text())
         .then(data => {
           // 更新页面上的氧气含量数据
@@ -52,7 +52,7 @@
         });
     }
 
-    // 每0.1秒刷新数据
+    // 每隔0.5秒刷新数据
     setInterval(fetchData, 500);
   </script>
 </body>
